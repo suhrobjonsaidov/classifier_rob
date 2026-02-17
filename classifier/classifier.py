@@ -51,7 +51,7 @@ categories = {
 #tests
 classifier = PromptClassifier(categories)
 print(classifier.classify("solve code gravity sum"))
-print(classifier.classify("write a python function for fibonacci"))
-print(classifier.classify("what is the derivative of x squared"))
-print(classifier.classify("how does gravity affect molecules"))
-print(classifier.classify("what is the meaning of life"))
+# print(classifier.classify("write a python function for fibonacci"))
+# print(classifier.classify("what is the derivative of x squared"))
+# print(classifier.classify("how does gravity affect molecules"))
+# print(classifier.classify("what is the meaning of life"))
