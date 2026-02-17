@@ -24,12 +24,16 @@ categories = df["category"].to_list()
 unique_categories = set(categories)
 
 for cat in unique_categories:
+    x_points = []
+    y_points = []
     for i in range(len(df)):
-        x_points = []
-        y_points = []
+        
         if df["category"][i] == cat:
             x_points.append(reduced[i][0])
             y_points.append(reduced[i][1])
 
     plt.scatter(x_points, y_points, label=cat)
 
+plt.legend()
+plt.title("promt embeddings by category")
+plt.savefig("clusters.png")
