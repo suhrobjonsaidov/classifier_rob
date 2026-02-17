@@ -1,7 +1,6 @@
 import re # regex - helps to get clean lists
-from collections import Counter
 
-class PromptClassifier:
+class PromptClassifier: #defnine hte class 
 
     def __init__(self, categories):
         self.categories = categories
@@ -42,25 +41,17 @@ class PromptClassifier:
 
     
 
-    
+   #sample categories for test 
 categories = {
     'MATH': ['solve', 'equation', 'calculate', 'sum', 'derivative', 'integral'],
     'CODING': ['function', 'code', 'python', 'loop', 'variable', 'debug'],
     'SCIENCE': ['atom', 'molecule', 'gravity', 'experiment', 'hypothesis']
 }
 
+#tests
 classifier = PromptClassifier(categories)
 print(classifier.classify("solve code gravity sum"))
 print(classifier.classify("write a python function for fibonacci"))
 print(classifier.classify("what is the derivative of x squared"))
 print(classifier.classify("how does gravity affect molecules"))
 print(classifier.classify("what is the meaning of life"))
-
-
-
-
-
-
-
-
-    
